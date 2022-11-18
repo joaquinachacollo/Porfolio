@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- CSS -->
+    <link rel="stylesheet" href="style.css">
+    <title>Porfolio</title>
+</head>
+<body>
+    <!-- seccion de encabezado  -->
+    <header class="container-header">
+        <div class="container">
+            <div class="logo">
+                <a href="#">JA</a>
+            </div>
+            <nav id="nav">
+                <ul class="ul">
+                    <li><a href="#inicio" onclick="seleccionar()">INICIO</a></li>
+                    <li><a href="#sobre-mi" onclick="seleccionar()">SOBRE MI</a></li>
+                    <li><a href="#skills" onclick="seleccionar()">SKILLS</a></li>
+                    <li><a href="#contacto" onclick="seleccionar()">CONTACTO</a></li>
+                </ul>
+            </nav>
+            <div class="nav-responsive" onclick="mostrarOcultarMenu()">
+                <i class="fa-solid fa-bars"></i>
+            </div>
+        </div>
+    </header>
+    
+    <!-- seccion inicio -->
+    <main id="inicio" class="inicio">
+        <div class="container-banner">
+            <div class="container-img">
+                <img class="img-inicio" src="./img/foto-cum (2).jpg" alt="">
+            </div>
+            <h1>Joaquin Achacollo</h1>
+            <h2>Programador Full Stack</h2>
+            <div class="redes">
+                <a href="#"><i class="fa-brands fa-linkedin"></i></a>
+                <a href="#"><i class="fa-brands fa-github"></i></a>
+            </div>
+        </div>
+    </main>
+
+    <!-- seccion sobre mi -->
+    <section id="sobre-mi" class="sobre-mi">
+        <div class="container-seccion">
+            <h2 class="titulo-sm">Sobre Mi</h2>
+            <p><span>Hola, soy Joaquin Achacollo.</span> Estoy muy interesado en el mundo IT, desde los que termine el secundario me gusto este mundo del desarrollo web, busco orientar mis habilidades tecnicas y de analisis para desempeñarme en el desarrollo de software. la puntualidad, responsabilidad del rol asumido y la motivacion para seguir capacitandome en nuevas tecnologias son mis valores fundamentales.</p>
+
+            <h2 class="titulo-datos">Datos Personales</h2>
+            <ul class="lista">
+                <li><span>Fecha de Nacimiento:</span> 31/10/2001 (21 años)</li>
+                <li><span>DNI:</span> 43569799</li>
+                <li><span>Direccion:</span> Av castañares 2131</li>
+                <li><span>Nacionalidad:</span> Argentino</li>
+                <li><span>Estado Civil:</span> Soltero</li>
+                <li><span>Celular:</span> 1153417904</li>
+                <li><span>Email:</span> joaquinachacollo@gmail.com</li>
+            </ul>
+        </div>
+    </section>
+
+    <!-- seccion skills -->
+    <section id="skills" class="skills"> 
+        <h2 class="titulo-skills">Skills</h2>
+        <div class="container-skills"> 
+            <img src="img/html-5.png" alt="">
+            <img src="img/css-3.png" alt="">
+            <img src="img/js.png" alt="">
+            <img src="img/git.png" alt="">
+            <img src="img/github.png" alt="">
+            <img src="img/sass.png" alt="">
+        </div>
+    </section>
+
+    <!-- seccion contacto -->
+    <section id="contacto" class="contacto">
+        <h2 class="titulo-contacto">Contacto</h2>
+        <div class="container-contacto">
+            <form name="formulario" class="form" netlify>
+                <h3>Consulta</h3>
+                <input type="text" name="Nombre" placeholder="Nombre">
+                <input type="email" name="Email" placeholder="Email">
+                <textarea name="Mensaje" placeholder="Mensaje"></textarea>
+                <button type="submit" class="btn">Enviar</button>
+            </form>
+        </div>
+    </section>
+
+     <!-- seccion footer -->
+
+    <footer>
+        <div class="container-footer">
+            <h3>Joaquin Porfolio 2022</h3>
+        </div>
+    </footer>
+
+    
+    <script src="script.js"></script>
+</body>
+</html>
